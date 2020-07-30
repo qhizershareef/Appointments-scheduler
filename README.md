@@ -21,4 +21,4 @@ Pick any date and time of your choice, and done your time will be reserved and h
   <li> Jquery to handle submit and upload the object to firestore.</li>
 </ul>
 
-<h3 style="color:crimson;">I hope you liked this ♥! from qhizer</h3>
+<h3 style="background-color:crimson;">I hope you liked this ♥! from qhizer</h3>
