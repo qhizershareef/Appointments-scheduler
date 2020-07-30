@@ -9,7 +9,16 @@ Pick any date and time of your choice, and done your time will be reserved and h
   </b></h5>
 <h4> solution: </h4>
 <ul>
-  <li>Firebase-firestore to store details as well as the time as "string"</li>
   
-  <li>when user selects a date onblur event runs function and there by fetches data from firestore and compares with the original timeslot array and shows the difference</li>
+  <li>Create an array with all the available time slots.</li>
+  
+  <li>Used Firebase-firestore to store details as well as the time as "string"</li>
+  
+  <li>when user selects a date onblur event runs function and there by fetches data from firestore and compares the array with the original timeslot array and shows the updated array, in the dropdown.</li>
+  
+  <li>The time slots are displayed dynamically through javascript, method used (createElement('li')</li>
+  
+  <li> Jquery to handle submit and upload the object to firestore.</li>
 </ul>
+
+<h3 style="color:crimson;">I hope you liked this ♥! from qhizer</h3>
