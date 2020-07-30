@@ -13,9 +13,9 @@ Pick any date and time of your choice, and done your time will be reserved and h
   
   <li>Create an array with all the available time slots.</li>
   
-  <li>Used Firebase-firestore to store details as well as the time as "string"</li>
+  <li>Used Firebase-firestore to store details as well as the time as "string".</li>
   
-  <li>when user selects a date onblur event runs function and there by fetches data from firestore and compares the array with the original timeslot array and shows the updated array, in the dropdown.</li>
+  <li>when user selects a date function is called and there by fetches data from firestore and compares the array with the original timeslot array and shows the updated array, in the dropdown.</li>
   
   <li>The time slots are displayed dynamically through javascript, method used (createElement('li')</li>
   
