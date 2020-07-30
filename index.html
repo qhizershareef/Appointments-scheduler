@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Aadhaar Seva</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/datepicker.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap-datepicker.js">  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $("#dat").datepicker();
+
+    })
+
+  </script>
+
+</head>
+
+<body>
+  <section class="colored-section" id="booking">
+    <div class="inner-layer">
+      <div class="container">
+        <div class="row no-margin">
+          <div class="col-sm-7">
+          </div>
+          <div class="col-sm-5">
+            <div class="form-data">
+              <div class="form-head">
+                <h2 style="color: rgba(0, 147, 173, 0.9); text-align: center; margin: 0 auto;">Book Your Appointment</h2>
+              </div>
+              <div class="form-body">
+                <form action="">
+                  <div class="row form-row">
+                    <input type="text" name="" placeholder="Enter Full Name" value="" id="Name" class="form-control" required>
+  
+                  </div>
+                  <div class="row form-row">
+                    <input type="text" name="" placeholder="Enter Mobile Number" value=""  id="Phone" class="form-control" required>
+                  </div>
+                  <div class="row form-row">
+                    <input type="email" name="" placeholder="Enter Email Address" value="" id="Email" class="form-control" required>
+  
+                  </div>
+                  <div class="row form-row">
+                    <input type="text" name=""  placeholder="Appointment date" value="" id="dat" class="form-control DateSelect" onblur="getAvailableTimes()" required>
+                  </div>
+  
+                  <div class="row form-row">
+                    <h6 style="color: rgba(0, 147, 173, 0.9);"><b>Select Time : &nbsp;</b></h6>
+                    <select style="padding:5px; font-size: large; min-height:40px;" size="2" class="timeSlots form-control dropdown">
+                    </select>
+                  </div>
+  
+                  <h6 style = "color: rgba(0, 147, 173, 0.9); text-align: center;">Address Details</h6>
+                  <div class="row form-row">
+                    <div class="col-sm-6">
+                      <input type="text" name="" placeholder="Enter Area" value="" id="Area" class="form-control">
+  
+  
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" name="" placeholder="Enter City" value="" id="City" class="form-control">
+  
+                    </div>
+  
+                  </div>
+                   
+                  <div class="row form-row">
+                    <button type="button" class="btn btn-success btn-appointment" name="button">
+                      Book Appointment
+                    </button>
+  
+                  </div>
+                </form>
+                
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </section>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+<script src="assets/config.js"></script>
+
+<script src="final.js"></script>
+
+</body>
+
+</html>
